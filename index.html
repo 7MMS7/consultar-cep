@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HiPlatform: prova-frontend-estagio</title>
+    <link rel = "stylesheet" href = "consultarCep.css">
+</head>
+<body>
+    <div class="background-image"></div>
+    <form>
+        <div class="search-form" data-js="searchForm">
+            <div class="title-form">
+                <label type="text" class="text-label">Consultar</label>
+                <label type="text" class="cep-label">CEP</label>
+            </div>
+            <div class="search-cep">
+                <input type="text" placeholder="Digite o CEP" data-js="cepInput">
+                <span type="text" data-js="messageInvalidCep"></span>
+                <button class="search-button" type="button" data-js="searchButton">Buscar</button>
+            </div>
+        </div>
+        <div class="hideme response-search" data-js="responseSearch">
+            <table class="cepInfo" data-js="tableCep"></table>
+            <button class="return-button" type="button" data-js="returnButton">Voltar</button>
+        </div>
+    </form>
+    <script type="text/javascript" src = "consultarCep.js"> </script>
+</body>
+</html>
